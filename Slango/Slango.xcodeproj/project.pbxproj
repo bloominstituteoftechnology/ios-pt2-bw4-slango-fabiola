@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		F315FCC924080A11009C98BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCC824080A11009C98BD /* AppDelegate.swift */; };
 		F315FCCB24080A11009C98BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCCA24080A11009C98BD /* SceneDelegate.swift */; };
-		F315FCCD24080A11009C98BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCCC24080A11009C98BD /* ViewController.swift */; };
 		F315FCD024080A11009C98BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F315FCCE24080A11009C98BD /* Main.storyboard */; };
 		F315FCD224080A12009C98BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F315FCD124080A12009C98BD /* Assets.xcassets */; };
 		F315FCD524080A12009C98BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F315FCD324080A12009C98BD /* LaunchScreen.storyboard */; };
+		F315FCE324081B12009C98BD /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCE224081B12009C98BD /* Word.swift */; };
+		F315FCE524081B1C009C98BD /* WordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCE424081B1C009C98BD /* WordController.swift */; };
+		F315FCE724081B2D009C98BD /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCE624081B2D009C98BD /* WordTableViewCell.swift */; };
+		F315FCE924081B45009C98BD /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCE824081B45009C98BD /* MainTableViewController.swift */; };
+		F315FCEB24081B52009C98BD /* WordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCEA24081B52009C98BD /* WordDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F315FCC524080A11009C98BD /* Slango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F315FCC824080A11009C98BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F315FCCA24080A11009C98BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F315FCCC24080A11009C98BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F315FCCF24080A11009C98BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F315FCD124080A12009C98BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F315FCD424080A12009C98BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F315FCD624080A12009C98BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F315FCE224081B12009C98BD /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		F315FCE424081B1C009C98BD /* WordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordController.swift; sourceTree = "<group>"; };
+		F315FCE624081B2D009C98BD /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		F315FCE824081B45009C98BD /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		F315FCEA24081B52009C98BD /* WordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		F315FCC724080A11009C98BD /* Slango */ = {
 			isa = PBXGroup;
 			children = (
-				F315FCC824080A11009C98BD /* AppDelegate.swift */,
-				F315FCCA24080A11009C98BD /* SceneDelegate.swift */,
-				F315FCCC24080A11009C98BD /* ViewController.swift */,
-				F315FCCE24080A11009C98BD /* Main.storyboard */,
-				F315FCD124080A12009C98BD /* Assets.xcassets */,
-				F315FCD324080A12009C98BD /* LaunchScreen.storyboard */,
-				F315FCD624080A12009C98BD /* Info.plist */,
+				F315FCE124080C3D009C98BD /* Resources */,
+				F315FCE024080C37009C98BD /* Model */,
+				F315FCDF24080C2B009C98BD /* Model Controller */,
+				F315FCDE24080C25009C98BD /* Views */,
+				F315FCDD24080C1A009C98BD /* View Controllers */,
+				F315FCDC24080C0E009C98BD /* Storyboards */,
 			);
 			path = Slango;
+			sourceTree = "<group>";
+		};
+		F315FCDC24080C0E009C98BD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F315FCCE24080A11009C98BD /* Main.storyboard */,
+				F315FCD324080A12009C98BD /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F315FCDD24080C1A009C98BD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F315FCE824081B45009C98BD /* MainTableViewController.swift */,
+				F315FCEA24081B52009C98BD /* WordDetailViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F315FCDE24080C25009C98BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F315FCE624081B2D009C98BD /* WordTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F315FCDF24080C2B009C98BD /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F315FCE424081B1C009C98BD /* WordController.swift */,
+			);
+			name = "Model Controller";
+			sourceTree = "<group>";
+		};
+		F315FCE024080C37009C98BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F315FCE224081B12009C98BD /* Word.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F315FCE124080C3D009C98BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F315FCC824080A11009C98BD /* AppDelegate.swift */,
+				F315FCCA24080A11009C98BD /* SceneDelegate.swift */,
+				F315FCD624080A12009C98BD /* Info.plist */,
+				F315FCD124080A12009C98BD /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F315FCCD24080A11009C98BD /* ViewController.swift in Sources */,
 				F315FCC924080A11009C98BD /* AppDelegate.swift in Sources */,
 				F315FCCB24080A11009C98BD /* SceneDelegate.swift in Sources */,
+				F315FCEB24081B52009C98BD /* WordDetailViewController.swift in Sources */,
+				F315FCE324081B12009C98BD /* Word.swift in Sources */,
+				F315FCE524081B1C009C98BD /* WordController.swift in Sources */,
+				F315FCE924081B45009C98BD /* MainTableViewController.swift in Sources */,
+				F315FCE724081B2D009C98BD /* WordTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
