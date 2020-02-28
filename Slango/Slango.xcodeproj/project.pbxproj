@@ -19,6 +19,9 @@
 		F315FCEB24081B52009C98BD /* WordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCEA24081B52009C98BD /* WordDetailViewController.swift */; };
 		F3E0E6E22408DCC1002FAB08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E12408DCC1002FAB08 /* HomeViewController.swift */; };
 		F3E0E6E42408DCDD002FAB08 /* ExamplePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E32408DCDD002FAB08 /* ExamplePopupViewController.swift */; };
+		F3E0E6E62409585C002FAB08 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E52409585C002FAB08 /* CardView.swift */; };
+		F3E0E6E82409709D002FAB08 /* ButtonShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E72409709D002FAB08 /* ButtonShadow.swift */; };
+		F3E0E6EA2409745B002FAB08 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E92409745B002FAB08 /* CellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		F315FCEA24081B52009C98BD /* WordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailViewController.swift; sourceTree = "<group>"; };
 		F3E0E6E12408DCC1002FAB08 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3E0E6E32408DCDD002FAB08 /* ExamplePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePopupViewController.swift; sourceTree = "<group>"; };
+		F3E0E6E52409585C002FAB08 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F3E0E6E72409709D002FAB08 /* ButtonShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShadow.swift; sourceTree = "<group>"; };
+		F3E0E6E92409745B002FAB08 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				F315FCE624081B2D009C98BD /* WordTableViewCell.swift */,
+				F3E0E6E52409585C002FAB08 /* CardView.swift */,
+				F3E0E6E92409745B002FAB08 /* CellView.swift */,
+				F3E0E6E72409709D002FAB08 /* ButtonShadow.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -208,11 +217,14 @@
 				F315FCCB24080A11009C98BD /* SceneDelegate.swift in Sources */,
 				F315FCEB24081B52009C98BD /* WordDetailViewController.swift in Sources */,
 				F3E0E6E42408DCDD002FAB08 /* ExamplePopupViewController.swift in Sources */,
+				F3E0E6E62409585C002FAB08 /* CardView.swift in Sources */,
 				F3E0E6E22408DCC1002FAB08 /* HomeViewController.swift in Sources */,
 				F315FCE324081B12009C98BD /* Word.swift in Sources */,
 				F315FCE524081B1C009C98BD /* WordController.swift in Sources */,
+				F3E0E6EA2409745B002FAB08 /* CellView.swift in Sources */,
 				F315FCE924081B45009C98BD /* MainTableViewController.swift in Sources */,
 				F315FCE724081B2D009C98BD /* WordTableViewCell.swift in Sources */,
+				F3E0E6E82409709D002FAB08 /* ButtonShadow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
