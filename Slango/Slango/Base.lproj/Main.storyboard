@@ -87,10 +87,18 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slango" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SN1-oL-Kyd">
+                                <rect key="frame" x="20" y="114" width="167" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.70196078429999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="SN1-oL-Kyd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Acv-UR-gHe"/>
                             <constraint firstItem="jkN-MF-Pzw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LZd-Xv-CFs"/>
+                            <constraint firstItem="SN1-oL-Kyd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="R9z-Bf-KZz"/>
                             <constraint firstItem="jkN-MF-Pzw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="174" id="dRF-Oe-LjT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -182,14 +190,14 @@
                                         <rect key="frame" x="0.0" y="66" width="312" height="144"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</string>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.70196078429999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="akv-i2-ftn" firstAttribute="top" secondItem="tX2-NI-phe" secondAttribute="bottom" constant="54" id="3rI-Ub-35z"/>
                             <constraint firstItem="tX2-NI-phe" firstAttribute="leading" secondItem="4qm-YS-Jds" secondAttribute="leading" constant="51" id="5S9-f1-2eE"/>
@@ -225,47 +233,66 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TbE-Vc-CHn" userLabel="PopUpView">
                                 <rect key="frame" x="20" y="184" width="374" height="354"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4G-O5-zat">
-                                        <rect key="frame" x="139" y="306" width="97" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4G-O5-zat">
+                                        <rect key="frame" x="138.5" y="306" width="97" height="40"/>
                                         <color key="backgroundColor" red="0.039215686270000001" green="0.70196078429999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="QkI-5x-yvB"/>
+                                            <constraint firstAttribute="height" constant="40" id="yrf-T5-0wL"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="Got it!">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R0B-iW-1op">
-                                        <rect key="frame" x="23" y="185" width="329" height="86"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Translation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-sR-t0S">
-                                        <rect key="frame" x="23" y="156" width="89" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="&quot;Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu do eiusmod tempor incididunt. &quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dm6-hv-y8i">
-                                        <rect key="frame" x="23" y="47" width="329" height="86"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DWV-pm-Ml3">
+                                        <rect key="frame" x="23" y="183" width="328" height="114.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-sR-t0S">
+                                                <rect key="frame" x="0.0" y="0.0" width="97.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R0B-iW-1op">
+                                                <rect key="frame" x="0.0" y="28.5" width="328" height="86"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="M4G-O5-zat" firstAttribute="centerX" secondItem="TbE-Vc-CHn" secondAttribute="centerX" id="4KA-10-sGq"/>
+                                    <constraint firstItem="DWV-pm-Ml3" firstAttribute="centerX" secondItem="M4G-O5-zat" secondAttribute="centerX" id="G3i-rP-POi"/>
+                                    <constraint firstItem="M4G-O5-zat" firstAttribute="top" secondItem="DWV-pm-Ml3" secondAttribute="bottom" constant="8.5" id="h6K-PN-91i"/>
+                                    <constraint firstAttribute="bottom" secondItem="M4G-O5-zat" secondAttribute="bottom" constant="8" id="rSd-vT-xb6"/>
+                                    <constraint firstItem="DWV-pm-Ml3" firstAttribute="leading" secondItem="TbE-Vc-CHn" secondAttribute="leading" constant="23" id="xMG-Uf-CI1"/>
+                                </constraints>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu do eiusmod tempor incididunt. &quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dm6-hv-y8i">
+                                <rect key="frame" x="43" y="219" width="329" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Ncd-H4-eMo"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="oTK-xo-75T" firstAttribute="trailing" secondItem="dm6-hv-y8i" secondAttribute="trailing" constant="42" id="2IO-4L-wdl"/>
+                            <constraint firstItem="TbE-Vc-CHn" firstAttribute="top" secondItem="dm6-hv-y8i" secondAttribute="bottom" constant="-163" id="LSb-Kt-lmO"/>
                             <constraint firstItem="oTK-xo-75T" firstAttribute="bottom" secondItem="TbE-Vc-CHn" secondAttribute="bottom" constant="324" id="MTi-sv-qpv"/>
                             <constraint firstItem="D96-re-ZP0" firstAttribute="top" secondItem="OGm-vO-o4d" secondAttribute="top" id="ODk-pZ-P33"/>
+                            <constraint firstItem="DWV-pm-Ml3" firstAttribute="top" secondItem="dm6-hv-y8i" secondAttribute="bottom" constant="20" id="Uq5-Fl-Nlb"/>
+                            <constraint firstItem="dm6-hv-y8i" firstAttribute="leading" secondItem="oTK-xo-75T" secondAttribute="leading" constant="43" id="bdG-lT-Jdp"/>
                             <constraint firstItem="D96-re-ZP0" firstAttribute="leading" secondItem="OGm-vO-o4d" secondAttribute="leading" id="fcE-fk-YNh"/>
                             <constraint firstItem="TbE-Vc-CHn" firstAttribute="top" secondItem="oTK-xo-75T" secondAttribute="top" constant="140" id="hTB-rq-tGB"/>
                             <constraint firstItem="TbE-Vc-CHn" firstAttribute="leading" secondItem="oTK-xo-75T" secondAttribute="leading" constant="20" id="iXI-r8-LDR"/>
@@ -299,7 +326,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="nextIcon" width="11" height="18"/>
+        <image name="nextIcon" width="11" height="17.5"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="C2t-F7-hoa"/>
