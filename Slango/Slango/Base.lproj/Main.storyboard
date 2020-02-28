@@ -126,6 +126,9 @@
                                                 <state key="normal" title="Example 1">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="NOn-na-TAP" kind="presentation" identifier="Example1Segue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="0MH-sl-ZXc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGD-Gm-yvn">
                                                 <rect key="frame" x="0.0" y="141" width="268" height="100"/>
@@ -138,6 +141,9 @@
                                                 <state key="normal" title="Example 1">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="NOn-na-TAP" kind="presentation" identifier="Example2Segue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="goz-il-Rgk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qn-ea-Xd5">
                                                 <rect key="frame" x="0.0" y="282" width="268" height="100"/>
@@ -150,6 +156,9 @@
                                                 <state key="normal" title="Example 1">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="NOn-na-TAP" kind="presentation" identifier="Example3Segue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="C2t-F7-hoa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -197,6 +206,79 @@
             </objects>
             <point key="canvasLocation" x="1881.1594202898552" y="126.5625"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="3e2-nv-8eA">
+            <objects>
+                <viewController id="NOn-na-TAP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OGm-vO-o4d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D96-re-ZP0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="CbL-2Y-qk3"/>
+                                    <constraint firstAttribute="width" constant="414" id="s0q-eu-ZLJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TbE-Vc-CHn" userLabel="PopUpView">
+                                <rect key="frame" x="20" y="184" width="374" height="354"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4G-O5-zat">
+                                        <rect key="frame" x="139" y="306" width="97" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.039215686270000001" green="0.70196078429999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Got it!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R0B-iW-1op">
+                                        <rect key="frame" x="23" y="185" width="329" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Translation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-sR-t0S">
+                                        <rect key="frame" x="23" y="156" width="89" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="&quot;Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu do eiusmod tempor incididunt. &quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dm6-hv-y8i">
+                                        <rect key="frame" x="23" y="47" width="329" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oTK-xo-75T" firstAttribute="bottom" secondItem="TbE-Vc-CHn" secondAttribute="bottom" constant="324" id="MTi-sv-qpv"/>
+                            <constraint firstItem="D96-re-ZP0" firstAttribute="top" secondItem="OGm-vO-o4d" secondAttribute="top" id="ODk-pZ-P33"/>
+                            <constraint firstItem="D96-re-ZP0" firstAttribute="leading" secondItem="OGm-vO-o4d" secondAttribute="leading" id="fcE-fk-YNh"/>
+                            <constraint firstItem="TbE-Vc-CHn" firstAttribute="top" secondItem="oTK-xo-75T" secondAttribute="top" constant="140" id="hTB-rq-tGB"/>
+                            <constraint firstItem="TbE-Vc-CHn" firstAttribute="leading" secondItem="oTK-xo-75T" secondAttribute="leading" constant="20" id="iXI-r8-LDR"/>
+                            <constraint firstItem="TbE-Vc-CHn" firstAttribute="centerX" secondItem="OGm-vO-o4d" secondAttribute="centerX" id="uB4-aV-MWk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oTK-xo-75T"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RoF-vc-XQC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbr-E7-cCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2702.898550724638" y="125.89285714285714"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ng4-na-5sR">
             <objects>
@@ -219,4 +301,7 @@
     <resources>
         <image name="nextIcon" width="11" height="18"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="C2t-F7-hoa"/>
+    </inferredMetricsTieBreakers>
 </document>
