@@ -17,6 +17,8 @@
 		F315FCE724081B2D009C98BD /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCE624081B2D009C98BD /* WordTableViewCell.swift */; };
 		F315FCE924081B45009C98BD /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCE824081B45009C98BD /* MainTableViewController.swift */; };
 		F315FCEB24081B52009C98BD /* WordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCEA24081B52009C98BD /* WordDetailViewController.swift */; };
+		F3E0E6E22408DCC1002FAB08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E12408DCC1002FAB08 /* HomeViewController.swift */; };
+		F3E0E6E42408DCDD002FAB08 /* ExamplePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E32408DCDD002FAB08 /* ExamplePopupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F315FCE624081B2D009C98BD /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
 		F315FCE824081B45009C98BD /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		F315FCEA24081B52009C98BD /* WordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailViewController.swift; sourceTree = "<group>"; };
+		F3E0E6E12408DCC1002FAB08 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F3E0E6E32408DCDD002FAB08 /* ExamplePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePopupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			children = (
 				F315FCE824081B45009C98BD /* MainTableViewController.swift */,
 				F315FCEA24081B52009C98BD /* WordDetailViewController.swift */,
+				F3E0E6E12408DCC1002FAB08 /* HomeViewController.swift */,
+				F3E0E6E32408DCDD002FAB08 /* ExamplePopupViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -201,6 +207,8 @@
 				F315FCC924080A11009C98BD /* AppDelegate.swift in Sources */,
 				F315FCCB24080A11009C98BD /* SceneDelegate.swift in Sources */,
 				F315FCEB24081B52009C98BD /* WordDetailViewController.swift in Sources */,
+				F3E0E6E42408DCDD002FAB08 /* ExamplePopupViewController.swift in Sources */,
+				F3E0E6E22408DCC1002FAB08 /* HomeViewController.swift in Sources */,
 				F315FCE324081B12009C98BD /* Word.swift in Sources */,
 				F315FCE524081B1C009C98BD /* WordController.swift in Sources */,
 				F315FCE924081B45009C98BD /* MainTableViewController.swift in Sources */,
