@@ -26,7 +26,7 @@ class WordDetailViewController: UIViewController {
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
-        gradientLayer.colors = [UIColor.init(named: "AppDarkBlue")!, UIColor.init(named: "AppLightBlue")! ]
+        gradientLayer.colors = [UIColor(named: "AppDarkBlue")!.cgColor, UIColor(named: "AppLightBlue")!.cgColor ]
         gradientLayer.shouldRasterize = true
         backgroundGradient.layer.addSublayer(gradientLayer)
         
