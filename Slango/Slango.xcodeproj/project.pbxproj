@@ -18,6 +18,7 @@
 		F315FCE924081B45009C98BD /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCE824081B45009C98BD /* MainTableViewController.swift */; };
 		F315FCEB24081B52009C98BD /* WordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315FCEA24081B52009C98BD /* WordDetailViewController.swift */; };
 		F3571445240AA9CD009F9BEA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3571444240AA9CD009F9BEA /* Colors.xcassets */; };
+		F3571447240AC8E2009F9BEA /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = F3571446240AC8E2009F9BEA /* words.json */; };
 		F3E0E6E22408DCC1002FAB08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E12408DCC1002FAB08 /* HomeViewController.swift */; };
 		F3E0E6E42408DCDD002FAB08 /* ExamplePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E32408DCDD002FAB08 /* ExamplePopupViewController.swift */; };
 		F3E0E6E62409585C002FAB08 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E52409585C002FAB08 /* CardView.swift */; };
@@ -39,6 +40,7 @@
 		F315FCE824081B45009C98BD /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		F315FCEA24081B52009C98BD /* WordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailViewController.swift; sourceTree = "<group>"; };
 		F3571444240AA9CD009F9BEA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F3571446240AC8E2009F9BEA /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = words.json; path = ../../../../../words.json; sourceTree = "<group>"; };
 		F3E0E6E12408DCC1002FAB08 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3E0E6E32408DCDD002FAB08 /* ExamplePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePopupViewController.swift; sourceTree = "<group>"; };
 		F3E0E6E52409585C002FAB08 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				F315FCD624080A12009C98BD /* Info.plist */,
 				F315FCD124080A12009C98BD /* Assets.xcassets */,
 				F3571444240AA9CD009F9BEA /* Colors.xcassets */,
+				F3571446240AC8E2009F9BEA /* words.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				F3571445240AA9CD009F9BEA /* Colors.xcassets in Resources */,
 				F315FCD224080A12009C98BD /* Assets.xcassets in Resources */,
 				F315FCD024080A11009C98BD /* Main.storyboard in Resources */,
+				F3571447240AC8E2009F9BEA /* words.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
