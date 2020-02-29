@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
         tableView.delegate = self as! UITableViewDelegate
         tableView.dataSource = self as! UITableViewDataSource
         tableView.delaysContentTouches = false
+        
     }
     
     // MARK: - UI

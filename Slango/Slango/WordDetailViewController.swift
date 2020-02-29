@@ -35,6 +35,9 @@ class WordDetailViewController: UIViewController {
 
     }
     
+    @IBAction func backToHome(_ sender: UIButton) {
+       
+    }
     /*
     // MARK: - Navigation
 

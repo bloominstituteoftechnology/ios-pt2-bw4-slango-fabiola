@@ -9,6 +9,9 @@
 import UIKit
 
 class ExamplePopupViewController: UIViewController {
+    
+    @IBOutlet weak var closePopup: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +19,10 @@ class ExamplePopupViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func closePopup(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -26,5 +32,7 @@ class ExamplePopupViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }
