@@ -147,7 +147,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="nQH-sc-KLF">
                                         <rect key="frame" x="73" y="74" width="268" height="382"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywh-dq-ZsK" customClass="ButtonShadow" customModule="Slango" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywh-dq-ZsK" customClass="ShadowedButton" customModule="Slango" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="268" height="100"/>
                                                 <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -162,7 +162,7 @@
                                                     <segue destination="NOn-na-TAP" kind="presentation" identifier="Example1Segue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="0MH-sl-ZXc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGD-Gm-yvn" customClass="ButtonShadow" customModule="Slango" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGD-Gm-yvn" customClass="ShadowedButton" customModule="Slango" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="141" width="268" height="100"/>
                                                 <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -177,7 +177,7 @@
                                                     <segue destination="NOn-na-TAP" kind="presentation" identifier="Example2Segue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="goz-il-Rgk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qn-ea-Xd5" customClass="ButtonShadow" customModule="Slango" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qn-ea-Xd5" customClass="ShadowedButton" customModule="Slango" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="282" width="268" height="100"/>
                                                 <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -377,6 +377,6 @@
         <image name="nextIcon" width="11" height="17.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="C2t-F7-hoa"/>
+        <segue reference="0MH-sl-ZXc"/>
     </inferredMetricsTieBreakers>
 </document>

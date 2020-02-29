@@ -1,5 +1,5 @@
 //
-//  ButtonShadow.swift
+//  ShadowedButton.swift
 //  Slango
 //
 //  Created by Fabiola S on 2/28/20.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ButtonShadow: UIButton {
+class ShadowedButton: UIButton {
     
     override func awakeFromNib() {
         layer.shadowPath = CGPath(rect: layer.bounds, transform:  nil)
