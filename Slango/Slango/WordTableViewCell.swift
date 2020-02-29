@@ -9,6 +9,10 @@
 import UIKit
 
 class WordTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var definition: UITextView!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +23,11 @@ class WordTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setWord(word: WordList) {
+        wordLabel.text = word.word
+        definition.text = word.definition
     }
 
 }
