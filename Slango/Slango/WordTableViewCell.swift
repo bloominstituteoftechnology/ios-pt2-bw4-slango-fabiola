@@ -13,19 +13,14 @@ class WordTableViewCell: UITableViewCell {
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var definition: UITextView!
     
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var word: Word? {
+        didSet {
+            updateViews()
+        }
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-    func setWord(word: WordList) {
+    private func updateViews() {
+        guard let word = word else { return }
         wordLabel.text = word.word
         definition.text = word.definition
     }
