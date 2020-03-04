@@ -346,6 +346,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="RoF-vc-XQC"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="exampleTranslationTextView" destination="R0B-iW-1op" id="VFy-YZ-y4F"/>
+                        <outlet property="wordExampleTextView" destination="dm6-hv-y8i" id="5BB-Bo-yVM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbr-E7-cCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

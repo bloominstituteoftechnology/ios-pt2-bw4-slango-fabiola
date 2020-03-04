@@ -22,7 +22,7 @@ class WordDetailViewController: UIViewController {
             updateViews()
         }
     }
-    
+    var index: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,6 @@ class WordDetailViewController: UIViewController {
         gradientLayer.colors = [UIColor(named: "AppLightBlue")!.cgColor, UIColor(named: "AppDarkBlue")!.cgColor ]
         gradientLayer.shouldRasterize = true
         backgroundGradient.layer.addSublayer(gradientLayer)
-        
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
 
@@ -51,14 +50,32 @@ class WordDetailViewController: UIViewController {
         definitionTextView.text = word?.definition
     }
     
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        switch segue.identifier {
+        case "Example1Segue":
+            if let popupVC = segue.destination as? ExamplePopupViewController {
+                popupVC.wordController = wordController
+                popupVC.word = word
+                popupVC.index = 0
+            }
+        case "Example2Segue":
+            if let popupVC = segue.destination as? ExamplePopupViewController {
+                popupVC.wordController = wordController
+                popupVC.word = word
+                popupVC.index = 1
+            }
+        case "Example3Segue":
+            if let popupVC = segue.destination as? ExamplePopupViewController {
+                popupVC.wordController = wordController
+                popupVC.word = word
+                popupVC.index = 2
+            }
+        default:
+            return
+        }
     }
-    */
-
+    
 }

@@ -10,29 +10,42 @@ import UIKit
 
 class ExamplePopupViewController: UIViewController {
     
-    @IBOutlet weak var closePopup: UIButton!
+    // MARK: Outlets
+    @IBOutlet weak var wordExampleTextView: UITextView!
+    @IBOutlet weak var exampleTranslationTextView: UITextView!
+    
+    // MARK: Properties
+    var wordController: WordController?
+    var word: Word?
+    var index: Int = 0
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateViews()
     }
+    
+    // MARK: UI
     
     @IBAction func closePopup(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateViews() {
+        switch index {
+        case 0:
+            wordExampleTextView.text = word?.scenarios[0]
+            exampleTranslationTextView.text = word?.scenarios[1]
+        case 1:
+            wordExampleTextView.text = word?.scenarios[2]
+            exampleTranslationTextView.text = word?.scenarios[3]
+        case 2:
+            wordExampleTextView.text = word?.scenarios[4]
+            exampleTranslationTextView.text = word?.scenarios[5]
+        default:
+            wordExampleTextView.text = ""
+            exampleTranslationTextView.text = ""
+        }
     }
-    */
     
-    
-
 }
