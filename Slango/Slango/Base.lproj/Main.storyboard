@@ -246,6 +246,8 @@
                     <navigationItem key="navigationItem" id="s96-x3-ZXg"/>
                     <connections>
                         <outlet property="backgroundGradient" destination="uLN-bg-ysx" id="PiR-ek-0hF"/>
+                        <outlet property="definitionTextView" destination="uci-Rr-MOa" id="HJ1-wf-VcK"/>
+                        <outlet property="wordLabel" destination="dyp-8b-GBu" id="nud-0b-DSt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zM-El-tiM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

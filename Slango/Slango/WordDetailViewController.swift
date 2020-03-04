@@ -12,7 +12,10 @@ class WordDetailViewController: UIViewController {
     
     // MARK: Outlets
     @IBOutlet weak var backgroundGradient: UIView!
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var definitionTextView: UITextView!
     
+    // MARK: Properties
     var wordController: WordController?
     var word: Word? {
         didSet {
@@ -24,6 +27,7 @@ class WordDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradientBackgroundColor()
+        updateViews()
     }
     
     // MARK: - UI
@@ -42,7 +46,9 @@ class WordDetailViewController: UIViewController {
     }
     
     private func updateViews() {
-        
+        guard isViewLoaded else { return }
+        wordLabel.text = word?.word
+        definitionTextView.text = word?.definition
     }
     
     /*
