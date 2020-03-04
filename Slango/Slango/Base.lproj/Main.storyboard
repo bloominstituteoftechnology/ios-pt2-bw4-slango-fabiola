@@ -165,7 +165,7 @@
                                                     <segue destination="NOn-na-TAP" kind="presentation" identifier="Example1Segue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="0MH-sl-ZXc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGD-Gm-yvn" customClass="ShadowedButton" customModule="Slango" customModuleProvider="target">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGD-Gm-yvn" customClass="ShadowedButton" customModule="Slango" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="141" width="268" height="100"/>
                                                 <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -180,7 +180,7 @@
                                                     <segue destination="NOn-na-TAP" kind="presentation" identifier="Example2Segue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="goz-il-Rgk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qn-ea-Xd5" customClass="ShadowedButton" customModule="Slango" customModuleProvider="target">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qn-ea-Xd5" customClass="ShadowedButton" customModule="Slango" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="282" width="268" height="100"/>
                                                 <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
