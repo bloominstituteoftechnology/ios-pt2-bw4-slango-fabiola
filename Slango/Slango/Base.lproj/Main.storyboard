@@ -99,7 +99,7 @@
                                         <connections>
                                             <outlet property="definition" destination="CZU-tz-HP3" id="Mdf-WE-TC1"/>
                                             <outlet property="wordLabel" destination="xDp-QA-joo" id="JTk-CM-Qhn"/>
-                                            <segue destination="cC0-Lf-05a" kind="show" identifier="ShowExamplesDetailSegue" id="7A3-fs-GEK"/>
+                                            <segue destination="cC0-Lf-05a" kind="show" identifier="WordDetailSegue" id="7A3-fs-GEK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
