@@ -14,35 +14,39 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var backgroundGradient: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    var words: [WordList] = []
+    // MARK: Properties
+    private let wordController = WordController()
+    private var words: [Word] = []
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradientBackgroundColor()
-        // Do any additional setup after loading the view.
-        //TESTING
-        words = WordList.createWords()
-        tableView.delegate = self as UITableViewDelegate
-        tableView.dataSource = self as UITableViewDataSource
         tableView.delaysContentTouches = false
         
+        wordController.loadFromPersistentStore { words, error in
+            if let error = error {
+                print("Error loading words: \(error)")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.words = words ?? []
+                self.tableView.reloadData()
+            }
+        }
     }
     
     // MARK: - UI
-    
     func setGradientBackgroundColor() {
-        
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
         gradientLayer.colors = [UIColor(named: "AppDarkBlue")!.cgColor, UIColor(named: "AppLightBlue")!.cgColor ]
         gradientLayer.shouldRasterize = true
         backgroundGradient.layer.addSublayer(gradientLayer)
-        
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
-
     }
-    
 
     /*
     // MARK: - Navigation
@@ -53,19 +57,17 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
 
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        words.count
+        return self.words.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath) as! WordTableViewCell
         let word = words[indexPath.row]
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell") as! WordTableViewCell
-        cell.setWord(word: word)
+        cell.word = word
         
         return cell
     }
@@ -73,7 +75,5 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180
     }
-    
-    
     
 }

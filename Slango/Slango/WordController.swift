@@ -11,6 +11,7 @@ import Foundation
 class WordController {
     
     // MARK: Properties
+    private(set) var words: [Word] = []
     private var persistentFileURL: URL? {
         guard let filePath = Bundle.main.path(forResource: "words", ofType: "json") else { return nil }
         return URL(fileURLWithPath: filePath)
@@ -33,7 +34,7 @@ class WordController {
                 let words = try decoder.decode([Word].self, from: data)
                 completion(words, nil)
             } catch {
-                print("Error loading student data: \(error)")
+                print("Error loading word data: \(error)")
                 completion(nil, error)
             }
         }
