@@ -17,10 +17,15 @@ class HomeViewController: UIViewController {
     // MARK: Properties
     private let wordController = WordController()
     private var words: [Word] = []
-    
+    var learningStarted: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UNService.shared.authorize()
+        // To trigger by day
+//        components.weekday = 4
+        NotificationCenter.default.addObserver(self, selector: #selector(handleAction(_:)), name: NSNotification.Name("internalNotification.handleAction"), object: nil)
+        
         setGradientBackgroundColor()
         tableView.delaysContentTouches = false
         
@@ -48,6 +53,30 @@ class HomeViewController: UIViewController {
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
     }
 
+    @IBAction func startButtonPressed(_ sender: UIButton) {
+        for word in words.enumerated() {
+            triggerNotification(word: word.element)
+            print(word.element)
+            }
+    }
+    
+    func triggerNotification(word: Word) {
+        var components = DateComponents()
+        components.second = 0
+        UNService.shared.firstNotificationForNewWord(with: components, word: word)
+    }
+    
+    @objc func handleAction(_ sender: Notification) {
+        guard let action = sender.object as? NotificationActionsID else { return }
+        switch action {
+        case .firstNotification: print("Testing first Notification")
+        case .scenario1: print("Testing first scenario")
+        case .scenario2: print("Testing second scenario")
+        case .scenario3: print("Testing third scenario")
+            
+        
+        }
+    }
     
     // MARK: - Navigation
 

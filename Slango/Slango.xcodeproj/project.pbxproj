@@ -20,6 +20,8 @@
 		F3571445240AA9CD009F9BEA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3571444240AA9CD009F9BEA /* Colors.xcassets */; };
 		F3571447240AC8E2009F9BEA /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = F3571446240AC8E2009F9BEA /* words.json */; };
 		F3BD27812410B09400161A83 /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BD27802410B09400161A83 /* UNService.swift */; };
+		F3DD87FA2412051E002C15EA /* NotificationActionsID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD87F92412051E002C15EA /* NotificationActionsID.swift */; };
+		F3DD87FC241216D6002C15EA /* NotificationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD87FB241216D6002C15EA /* NotificationCategory.swift */; };
 		F3E0E6E22408DCC1002FAB08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E12408DCC1002FAB08 /* HomeViewController.swift */; };
 		F3E0E6E42408DCDD002FAB08 /* ExamplePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E32408DCDD002FAB08 /* ExamplePopupViewController.swift */; };
 		F3E0E6E62409585C002FAB08 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E0E6E52409585C002FAB08 /* CardView.swift */; };
@@ -43,6 +45,8 @@
 		F3571444240AA9CD009F9BEA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F3571446240AC8E2009F9BEA /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = words.json; path = ../../../../../words.json; sourceTree = "<group>"; };
 		F3BD27802410B09400161A83 /* UNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNService.swift; sourceTree = "<group>"; };
+		F3DD87F92412051E002C15EA /* NotificationActionsID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActionsID.swift; sourceTree = "<group>"; };
+		F3DD87FB241216D6002C15EA /* NotificationCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCategory.swift; sourceTree = "<group>"; };
 		F3E0E6E12408DCC1002FAB08 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3E0E6E32408DCDD002FAB08 /* ExamplePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePopupViewController.swift; sourceTree = "<group>"; };
 		F3E0E6E52409585C002FAB08 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				F315FCE224081B12009C98BD /* Word.swift */,
+				F3DD87F92412051E002C15EA /* NotificationActionsID.swift */,
+				F3DD87FB241216D6002C15EA /* NotificationCategory.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -229,6 +235,8 @@
 				F315FCEB24081B52009C98BD /* WordDetailViewController.swift in Sources */,
 				F3E0E6E42408DCDD002FAB08 /* ExamplePopupViewController.swift in Sources */,
 				F3E0E6E62409585C002FAB08 /* CardView.swift in Sources */,
+				F3DD87FC241216D6002C15EA /* NotificationCategory.swift in Sources */,
+				F3DD87FA2412051E002C15EA /* NotificationActionsID.swift in Sources */,
 				F3E0E6E22408DCC1002FAB08 /* HomeViewController.swift in Sources */,
 				F315FCE324081B12009C98BD /* Word.swift in Sources */,
 				F3BD27812410B09400161A83 /* UNService.swift in Sources */,
