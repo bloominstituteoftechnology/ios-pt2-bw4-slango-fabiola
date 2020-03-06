@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+enum NotificationCategory: String {
+    case firstNotification = "userNotification.category.firstNotification"
+    case scenario1 = "userNotification.category.scenario1"
+    case scenario2 = "userNotification.category.scenario2"
+    case scenario3 = "userNotification.category.scenario3"
+    
+}
