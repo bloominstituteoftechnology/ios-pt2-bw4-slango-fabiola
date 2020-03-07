@@ -17,13 +17,12 @@ class HomeViewController: UIViewController {
     // MARK: Properties
     private let wordController = WordController()
     private var words: [Word] = []
+    var word: Word?
     var learningStarted: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         UNService.shared.authorize()
-        // To trigger by day
-//        components.weekday = 4
         NotificationCenter.default.addObserver(self, selector: #selector(handleAction(_:)), name: NSNotification.Name("internalNotification.handleAction"), object: nil)
         
         setGradientBackgroundColor()
@@ -37,6 +36,7 @@ class HomeViewController: UIViewController {
             
             DispatchQueue.main.async {
                 self.words = words ?? []
+                self.word = self.words.first
                 self.tableView.reloadData()
             }
         }
@@ -54,25 +54,46 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func startButtonPressed(_ sender: UIButton) {
-        for word in words.enumerated() {
-            triggerNotification(word: word.element)
-            print(word.element)
+        for word in words {
+            triggerNotification(word: word)
+            print(word)
             }
     }
     
     func triggerNotification(word: Word) {
         var components = DateComponents()
-        components.second = 0
+        components.second = 10
         UNService.shared.firstNotificationForNewWord(with: components, word: word)
+        
+    }
+    
+    func triggerScenarioNotification(word: Word, scenario: Int) {
+        var components = DateComponents()
+        components.second = 10
+        switch scenario {
+        case 1:
+            UNService.shared.scenario1Notification(with: components, word: word, scenarioIndex: 0, scenarioTranslation: 1)
+        case 2:
+            UNService.shared.scenario2Notification(with: components, word: word, scenarioIndex: 2, scenarioTranslation: 3)
+        case 3:
+            UNService.shared.scenario3Notification(with: components, word: word, scenarioIndex: 4, scenarioTranslation: 5)
+            
+        default:
+            UNService.shared.firstNotificationForNewWord(with: components, word: word)
+        }
+        
     }
     
     @objc func handleAction(_ sender: Notification) {
         guard let action = sender.object as? NotificationActionsID else { return }
+        print(word)
+        guard var word = word else { return }
+        
         switch action {
-        case .firstNotification: print("Testing first Notification")
-        case .scenario1: print("Testing first scenario")
-        case .scenario2: print("Testing second scenario")
-        case .scenario3: print("Testing third scenario")
+        case .firstNotification: triggerScenarioNotification(word: word, scenario: 1)
+        case .scenario1: triggerScenarioNotification(word: word, scenario: 2)
+        case .scenario2: triggerScenarioNotification(word: word, scenario: 3)
+        case .scenario3: word.hasBeenLearned = true
             
         
         }
