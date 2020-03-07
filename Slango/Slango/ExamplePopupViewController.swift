@@ -41,7 +41,7 @@ class ExamplePopupViewController: UIViewController {
             exampleTranslationTextView.text = word?.scenarios[3]
         case 2:
             wordExampleTextView.text = word?.scenarios[4]
-            exampleTranslationTextView.text = word?.scenarios[5]
+            exampleTranslationTextView.text = word?.scenarios[5 - 1]
         default:
             wordExampleTextView.text = ""
             exampleTranslationTextView.text = ""
