@@ -67,11 +67,12 @@ class UNService: NSObject {
         unCenter.add(request)
     }
     
+    // Separated each notification into a function because it was causing bugs when handling each action
     func scenario1Notification(with components: DateComponents, word: Word, scenarioIndex: Int, scenarioTranslation: Int) {
         let content = UNMutableNotificationContent()
         
         content.title = "Pst! Remember: \(word.word)?"
-        content.body = "Definition:\n\(word.scenarios[scenarioIndex])\n\nTranslation:\n\(word.scenarios[scenarioTranslation])"
+        content.body = "Example:\n\(word.scenarios[scenarioIndex])\n\nTranslation:\n\(word.scenarios[scenarioTranslation])"
         content.sound = .default
         content.categoryIdentifier = NotificationCategory.scenario1.rawValue
         
@@ -84,10 +85,10 @@ class UNService: NSObject {
     func scenario2Notification(with components: DateComponents, word: Word, scenarioIndex: Int, scenarioTranslation: Int) {
         let content = UNMutableNotificationContent()
         
-        content.title = "Pst! Remember: \(word.word)?"
-        content.body = "Definition:\n\(word.scenarios[scenarioIndex])\n\nTranslation:\n\(word.scenarios[scenarioTranslation])"
+        content.title = "What was that word again? \(word.word)?"
+        content.body = "Example:\n\(word.scenarios[scenarioIndex])\n\nTranslation:\n\(word.scenarios[scenarioTranslation])"
         content.sound = .default
-        content.categoryIdentifier = NotificationCategory.scenario1.rawValue
+        content.categoryIdentifier = NotificationCategory.scenario2.rawValue
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
         let request = UNNotificationRequest(identifier: "userNotification.secondScenario", content: content, trigger: trigger)
@@ -99,9 +100,9 @@ class UNService: NSObject {
         let content = UNMutableNotificationContent()
         
         content.title = "Hello! Is it \(word.word) you're looking for?"
-        content.body = "Definition:\n\(word.scenarios[scenarioIndex])\n\nTranslation:\n\(word.scenarios[scenarioTranslation])"
+        content.body = "Example:\n\(word.scenarios[scenarioIndex - 1])\n\nTranslation:\n\(word.scenarios[scenarioTranslation - 1])"
         content.sound = .default
-        content.categoryIdentifier = NotificationCategory.scenario1.rawValue
+        content.categoryIdentifier = NotificationCategory.scenario3.rawValue
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
         let request = UNNotificationRequest(identifier: "userNotification.thirdScenario", content: content, trigger: trigger)

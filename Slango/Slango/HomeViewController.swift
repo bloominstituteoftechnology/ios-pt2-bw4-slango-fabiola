@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
             
             DispatchQueue.main.async {
                 self.words = words ?? []
-                self.word = self.words.first
+//                self.word = self.words.first
                 self.tableView.reloadData()
             }
         }
@@ -86,16 +86,15 @@ class HomeViewController: UIViewController {
     
     @objc func handleAction(_ sender: Notification) {
         guard let action = sender.object as? NotificationActionsID else { return }
-        print(word)
-        guard var word = word else { return }
+        for word in words {
         
         switch action {
         case .firstNotification: triggerScenarioNotification(word: word, scenario: 1)
         case .scenario1: triggerScenarioNotification(word: word, scenario: 2)
         case .scenario2: triggerScenarioNotification(word: word, scenario: 3)
-        case .scenario3: word.hasBeenLearned = true
-            
-        
+        case .scenario3:
+            wordController.toggleHAsBeenLearned()
+            }
         }
     }
     

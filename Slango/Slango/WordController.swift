@@ -17,6 +17,8 @@ class WordController {
         return URL(fileURLWithPath: filePath)
     }
     
+    var word: Word?
+    
     // MARK: Functions
     func loadFromPersistentStore(completion: @escaping ([Word]?, Error?) -> Void) {
         let bgQueue = DispatchQueue(label: "wordQueue", attributes: .concurrent)
@@ -38,5 +40,11 @@ class WordController {
                 completion(nil, error)
             }
         }
+    }
+    
+    func toggleHAsBeenLearned() {
+        guard let word = word else { return }
+        
+        word.hasBeenLearned.toggle()
     }
 }
