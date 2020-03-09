@@ -100,7 +100,7 @@ class UNService: NSObject {
         let content = UNMutableNotificationContent()
         
         content.title = "Hello! Is it \(word.word) you're looking for?"
-        content.body = "Example:\n\(word.scenarios[scenarioIndex - 1])\n\nTranslation:\n\(word.scenarios[scenarioTranslation - 1])"
+        content.body = "Example:\n\(word.scenarios[scenarioIndex])\n\nTranslation:\n\(word.scenarios[scenarioTranslation])"
         content.sound = .default
         content.categoryIdentifier = NotificationCategory.scenario3.rawValue
         
