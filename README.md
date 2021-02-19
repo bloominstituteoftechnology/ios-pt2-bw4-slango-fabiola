@@ -22,4 +22,4 @@ Slango will bring the learning experience to the user, the app comes to you via 
     </p> 
 
 
-Slango — Fabiola. TL: Julian
+Slango — Language learning app for busy people
